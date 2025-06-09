@@ -1,12 +1,20 @@
 public class Main {
-    public static int addNumber(int a, int b) {
-        int result = a + b;
+    public static void greet(){
+        System.out.println("Hello, World!");
+    }
 
-        return result;
+    public static void greet(String name){
+        System.out.println("Hello, " + name + "!");
+    }
+
+    public static void greet(String name, int age){
+        System.out.println("Hello, " + name + "!");
+        System.out.println(name + "'s " + "age :" + age);
     }
 
     public static void main(String[] args) {
-        int number = addNumber(10,7);
-        System.out.println(number);
+        greet();
+        greet("Alice");
+        greet("John",16);
     }
 }
